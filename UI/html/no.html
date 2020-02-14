@@ -1,43 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>manage</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="..\css\no.css">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../css/login.css">
 </head>
+<body  onload="document.getElementById('id01').style.display='block'">
 
-<body>
-	<div class="form-item">
-	<a href="all-account.html">	 <button class="form-button" type="submit">view all accounts</button></a>
- <a href="teller-acc.html"><button class="form-button" type="submit">create a teller</button></a>
-
-		
+  <h2>selection transaction</h2>
+  
+  
+  <div id="id01" class="modal">
+    
+    <form class="modal-content animate" action="no.html" method="post">
+      
+  
+      <div class="container">
+		<label for="logo"><b>papel-bank</b></label>
+		<input type="text" placeholder="login-id" name="fname" >
+       <select>
+		   <option value="del">delete</option>
+		   <option value="view">view</option>
+		   <option value="act">activate</option>
+		   <option value="deact">deactivate</option>
+	   </select>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+     <a href="all-account.html">   <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">all accounts</button></a>
+	 <a href="teller-acc.html">   <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">create a teller</button></a> 
 	</div>
-	<form action="#" class="form">
-		
-		<div class="form-item">
-			<input type="number" class="form-input" placeholder="enter the account  number" aria-label="account no">
-
-
-
-			
-		</div>
-		
-
-	    <div  class="form-item">
-			<select class="form-input">
-				<option >view</option>
-				<option >delete</option>
-				<option>activate</option>
-				<option>deactivate</option>
-				
-			</select>
-			
-	    </div>
-	    <button class="form-button" type="submit">send</button>
-
-	</form>
+    </form>
+  </div>
+  
+<script src="UI/js/login.js"></script>
 
 </body>
 </html>

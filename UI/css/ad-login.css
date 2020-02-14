@@ -9,47 +9,54 @@ body{
     font-family: "pt sans narrow",sans-serf;
 }
 
+
 .form{
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0 20px -10px black;
-    overflow: hidden;
-    border-radius: 20px;
-    width:80%;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0 20px -10px black;
+	overflow: hidden;
+	border-radius: 20px;
+	width:80%;
     max-width: 500px;
-    top: -30px;
-    margin-left:50%;
+    margin-left: 800px;
 }
 .form-input,.form-button{
-    font-family: inherit;
-    
-    font-weight: 800px;
-    font-size:10px;
-    letter-spacing: 1.2px;
-    border:0;
+	font-family: inherit;
+
+	font-weight: 800;
+	font-size:10px;
+	letter-spacing: 1.2px;
+    border:1px black;
+
 }
 .form-input{
-    padding: 1.5em;
-    font-size: 15px;
+	padding: 2em;
+	font-size: 15px;
     width: 100%;
+    padding: 20px;
     
-
 }
 
 .form-button{
-    background: var(--clr);
-    color: white;
-    padding: 1em 2em;
-    height: 70px;
-    font-size: 20px;
+	background: var(--clr);
+	color: white;
+	padding: 1em 2em;
+	height: 80px;
+    font-size: 30px;
+    
+}
+.form-input:hover{
+    background-color: salmon;
+
 }
 .form-button:hover{
-    opacity:.8;
-    background-color: black;
+	opacity:.8;
+	background-color: black;
 }
 .form-button:focus{
-    background-color:green
+	background-color:green
 }
+
 @media only screen and (max-width:1020px)
 {
     
@@ -132,7 +139,7 @@ section{
     }
 label{
     color: white;
-    margin-left: 63%;
+    margin-left: 54%;
     font-family: monospace;
     font-size:2em;
 }
@@ -141,53 +148,71 @@ label{
     margin-left:35%;
     top:200px;
 }
-@media only screen and (max-width:1020px)
+@media only screen and (max-width:1200px)
 {
     
     .img{
      position: relative;
-    margin-left:280px;
+    margin-left:380px;
     overflow: hidden;
     border-radius: 20px;
+    
     width:80%;
     max-width: 500px;
-    top: 0px;
+    top: 20px;
 
 }
 label{
-    margin-left: 280px;
+    position: relative;
+    top: 60px;
+    margin-left: 380px;
 }
-}
-@media only screen and (max-width:568px){
-
-  .form{
+.form{
+    position: relative;
+    top: 70px;
     display: flex;
     flex-direction: column;
-    margin-left:30px;
+    margin-left:170px;
     overflow: hidden;
     border-radius: 18px;
     width:80%;
     max-width: 500px;
 }
+}
+@media only screen and (max-width:568px){
+
+  .form{
+      position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left:50px;
+    overflow: hidden;
+    border-radius: 18px;
+    width:80%;
+    max-width: 500px;
+    top: 50px;
+}
 label{
-    margin-left:90px;
+    position: relative;
+    margin-left:170px;
     font-size: 20px;
+    top:45px
 }
 .img{
     position: relative;
-   margin-left:120px;
+   margin-left:170px;
    overflow: hidden;
    border-radius: 20px;
    width:80%;
    max-width: 500px;
-   top: 0px;
+   top: 30px;
 
    
 
 }
 img{
-    height: 80px;
-    width: 80px;
+    height: 120px;
+    width: 120px;
 }
 
 <<<<<<< HEAD

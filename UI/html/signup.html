@@ -1,78 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>sign up</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="..\css\account.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../css/login.css">
 </head>
-<body>
-<form action="profile.html" class="form">
+<body  onload="document.getElementById('id01').style.display='block'">
 
-	<div class="form-item">
-			<input type="text" class="form-input" placeholder="firstname" aria-label="fname" required>
+  <h2></h2>
+  
+  
+  <div id="id01" class="modal">
+    
+    <form class="modal-content animate" action="profile.html" method="post">
+      
+  
+      <div class="container">
+        <label for="logo"><b>papel-bank-account-creation</b></label>
+        <input type="text" placeholder="firstname" name="fname" required>
+        <input type="surname" placeholder="surname" name="sname" required>
+        <input type="number" placeholder="national-id" name="nid" required>
+        <input type="email" placeholder="email" name="email" required>  
+        <input type="number" placeholder="telephone" name="tel">
+        <input type="password" placeholder="password" name="pswd" required>
+        <input type="file" placeholder="photo" name="pic">
+        <button type="submit">create</button>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+     <a href="../../index.html">   <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button></a>
+      </div>
+    </form>
+  </div>
+  
+<script src="UI/js/login.js"></script>
 
-
-
-			
-		</div>
-		<div class="form-item">
-			<input type="text" class="form-input" placeholder="secondname" aria-label="account no" required="">
-
-
-
-			
-		</div>
-		
-		
-		<div class="form-item">
-			<input type="number" class="form-input" placeholder="national id" aria-label="id" required>
-
-
-
-			
-		</div>
-		<div class="form-item">
-			<input type="email" class="form-input" placeholder="email" aria-label="mail" required>
-
-
-
-			
-		</div>
-		<div class="form-item">
-			<input type="telephone" class="form-input" placeholder="+250........." aria-label="account no" required="">
-
-
-
-			
-		</div>
-		
-		
-		<div  class="form-item">
-			<input type="password" class="form-input" placeholder="password"
-			aria-label="password" required>
-			
-	    </div>
-	    <div  class="form-item">
-			<input type="password" class="form-input" placeholder="re-enter password"
-			aria-label="co" required>
-			
-	    </div>
-
-	     <div  class="form-item">
-			<select class="form-input" placeholder="type" >
-				<option class="form-input">DEBIT</option>
-				<OPTION class="form-input">CREDIT</OPTION>
-			</select>
-			 <div  class="form-item">
-			<input type="file" id="myfile" name="filename" value="upload-image" class="form-input"  required>
-			
-	    </div>
-	    </div>
-
-	   
-	    <button class="form-button" type="submit">DONE</button>
-
-	</form>
-</form>
 </body>
 </html>
