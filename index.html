@@ -4,37 +4,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="UI/css/login.css">
 </head>
-<body>
-
-<h2>papel</h2>
-
-<button  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-<div id="id01" class="modal">
+<body onload="document.getElementById('id01').style.display='block'">
   
-  <form class="modal-content animate" action="/action_page.php" method="post">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <h2></h2>
+  
+  <div id="id01" class="modal">
+    
+    <form class="modal-content animate" action="UI/html/profile.html" method="post">
+  
+      <div class="container">
+        <label for="logo"><b>papel-bank-user-login</b></label>
+        <input type="text" placeholder="login-id" name="login" required>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button class="submit" type="submit">Login</button>
+
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+       <a href="UI/html/home.html"> <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+       <a href="UI/html/signup.html"> <button type="button"  class="cancelbtn">create account</button></a>
       
-    </div>
+      </div>
 
-    <div class="container">
-      <label for="uname"><b>papel-bank</b></label>
-      <input type="text" placeholder="login-id" name="uname" required>
-
-      <label for="psw"><b></b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button type="submit">Login</button>
-      
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-    <a href="UI/html/signup.html"> <button type="button" style.display='none'" class="cancelbtn">new account</button></a>
-      <span class="psw">staff<a href="UI/html/ad-login.html">admin</a></span>
-    </div>
-  </form>
-</div>
+    </form>
+  </div>
+ 
 <script src="UI/js/login.js"></script>
 
 </body>

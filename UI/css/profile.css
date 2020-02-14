@@ -12,6 +12,23 @@ body{
 	font-weight: 100;
 
 }
+
+.topnav a {
+	
+	float: right;
+	display: block;
+	color:black;
+	
+	
+	
+	
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	
+  }
+  
 .pro{
 	position:relative;
     margin-left: 700px ;
